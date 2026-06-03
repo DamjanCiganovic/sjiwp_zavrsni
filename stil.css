@@ -1,0 +1,418 @@
+
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+
+a[href="dodaj.php"] {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+}
+
+a[href="dodaj.php"]:hover {
+    background-color: #27ae60;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse !important; 
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: none !important;
+}
+
+th, td {
+    padding: 15px 20px !important; 
+    text-align: left;
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+tr:last-child td {
+    border-bottom: none !important;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+
+td a[href^="uredi.php"] {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+td a[href^="uredi.php"]:hover {
+    background-color: #2980b9;
+}
+
+td a[href^="obrisi.php"] {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+td a[href^="obrisi.php"]:hover {
+    background-color: #c0392b;
+}
+
+
+form {
+    background-color: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+
+form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px; 
+    color: #2c3e50;
+}
+
+
+form br {
+    display: none !important;
+}
+
+
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fcfcfc;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.15);
+    background-color: #fff;
+    outline: none;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+
+form button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    margin-right: 15px;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2);
+}
+
+form button[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+
+form a[href="index.php"] {
+    color: #7f8c8d;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+form a[href="index.php"]:hover {
+    color: #34495e;
+    text-decoration: underline;
+}
+
+
+button[data-bs-target="#exampleModal"] {
+    display: inline-block !important;
+    background-color: #9b59b6 !important; 
+    color: white !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border-radius: 5px !important;
+    box-shadow: 0 4px 6px rgba(155, 89, 182, 0.2) !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    margin-top: 20px;
+}
+
+button[data-bs-target="#exampleModal"]:hover {
+    background-color: #8e44ad !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 12px rgba(155, 89, 182, 0.3) !important;
+}
+
+
+.modal-content {
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+}
+
+.modal-header {
+    background-color: #2c3e50 !important;
+    color: white !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) !important; 
+}
+
+.modal-footer .btn-secondary {
+    background-color: #7f8c8d !important;
+    border: none !important;
+}
+
+.modal-footer .btn-primary {
+    background-color: #3498db !important;
+    border: none !important;
+}
+
+
+p[style="color:red"] {
+    background-color: #fde8e8;
+    color: #e74c3c !important;
+    padding: 15px;
+    border-left: 5px solid #e74c3c;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    
+    padding-top: 90px !important; 
+    margin-bottom: 100px !important; 
+}
+
+
+.glavni-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    border-bottom: 3px solid #3498db; 
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+
+
+.header-kontejner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.glavni-header .logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff !important; 
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.glavni-header .logo-naglasak {
+    color: #3498db;
+}
+
+.glavni-header .logo-ikona {
+    margin-right: 5px;
+}
+
+
+.header-navigacija {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-navigacija .nav-link {
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.header-navigacija .nav-link:hover {
+    color: #3498db !important;
+}
+
+
+
+
+.footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.glavni-footer {
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+    padding: 20px 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 3px solid #3498db; 
+}
+
+
+.footer-kontejner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+}
+
+.footer-kontejner p {
+    margin: 0;
+    font-size: 14px;
+    color: #b3b3b3; 
+}
+
+.footer-linkovi {
+    display: flex;
+    gap: 20px; 
+}
+
+.footer-linkovi a {
+    color: #ffffff !important; 
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease; 
+}
+
+.footer-linkovi a:hover {
+    color: #3498db !important; 
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding-top: 130px !important; 
+        margin-bottom: 150px !important;
+    }
+    
+    
+    .header-kontejner {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+    .header-navigacija {
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+    .footer-kontejner {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .footer-linkovi {
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+}
