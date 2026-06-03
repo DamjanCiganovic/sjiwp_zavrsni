@@ -2,7 +2,7 @@
 include "db.php";
 
 // Dohvati ID iz URL-a
-$id =$_GET['ID_dogadaj'];
+$id = (int)($_GET['id'] ?? 0);
 
 // Provjera ID-a
 if ($id <= 0) {
@@ -11,7 +11,7 @@ if ($id <= 0) {
 
 // DELETE upit
 $stmt = $conn->prepare("
-    DELETE FROM dogadaji
+    DELETE FROM Dogadaji
     WHERE ID_dogadaj = ?
 ");
 
