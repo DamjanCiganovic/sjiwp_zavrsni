@@ -11,7 +11,7 @@
         <!-- Logotip -->
         <div class="logo">
             <a href="index.php">
-                <span class="logo-ikona">🏆</span> Sport<span class="logo-naglasak">Squad</span>
+                <span class="logo-ikona">⚽</span> Sport<span class="logo-naglasak">Squad</span>
             </a>
         </div>
         
